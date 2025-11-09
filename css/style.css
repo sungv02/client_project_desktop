@@ -1,0 +1,574 @@
+/* Skip to Main */
+.skip a {
+    position: absolute;
+    top: -65px;
+}
+
+.skip a:focus {
+    top: 25px;
+}
+
+:focus {
+    border: 5px dashed #00274C;
+}
+
+/* Navigation top */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    background-color: #FFCB05;
+    list-style-type: none;
+}
+
+nav li {
+    float: none;
+}
+
+nav li a {
+    display: block;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+    color: #00274C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a.active {
+    color: #FFCB05;
+    background-color: rgb(0, 39, 76);
+}
+
+nav li a:hover,
+a:focus {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+/* Navigation side */
+
+aside ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #ffffff;
+    display: block;
+    float: none;
+}
+
+aside li a {
+    display: block;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 500;
+    color: #00274C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgba(0, 39, 76, 0.197);
+}
+
+aside li a.active {
+    color: #FFCB05;
+    background-color: #00274C;
+}
+
+aside li a:hover,
+a:focus {
+    background-color: #00274C;
+    color: #FFCB05;
+}
+
+
+/* Accessible font style */
+.atkinson-hyperlegible-regular {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Logo */
+header img {
+    width: 100%;
+    display: block;
+}
+
+/* Images */
+img {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+    padding: 0px;
+}
+
+/* Video */
+iframe {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+}
+
+/* Headers */
+h1 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+    color: #00274C;
+    margin: 30px;
+    padding: 0px 0px 50px 0px;
+    border-bottom: 2px solid rgba(0, 39, 76, 0.197);
+}
+
+h2 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    color: #00274C;
+    margin: 0px;
+    padding: 20px 20px 5px 20px;
+}
+
+h3 {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: #00274C;
+    padding: 20px 20px 5px 20px;
+    margin: 0px;
+}
+
+/* Paragraph */
+p {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #000000;
+    font-size: 18px;
+    padding: 10px 20px 10px 20px;
+}
+
+p a {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-style: normal;
+    color: #00274C;
+    font-size: 18px;
+}
+
+/* Body */
+body {
+    margin: 20px 20px 0px 20px;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+}
+
+body a {
+    color: #00274C;
+}
+
+/* Text Block lists */
+
+ol {
+    padding: 5px 20px 10px 50px;
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    gap: 13px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-container iframe {
+    max-height: 675px;
+}
+
+/* Grid Content: separate main with side navigation */
+
+header {
+    grid-column: 1/-1;
+    grid-row-start: 1;
+    width: 100%;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+aside {
+    grid-column: 1/-1;
+    grid-row-start: 11;
+    font-size: 16px;
+    background-color: #00274C;
+    width: 100%
+}
+
+aside h3 {
+    color: #ffffff;
+    font-size: 18px;
+    padding: 16px;
+    text-align: center;
+}
+
+/* Grid within Main */
+
+.main-container {
+    grid-column: 1/-1;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+main div {
+    grid-column: 1/-1;
+}
+
+/* Grid Elements in Main */
+
+.intro {
+    grid-column: 1/-1;
+}
+
+.why_this {
+    grid-column: 1/-1;
+}
+
+.start_here {
+    grid-column: 3/5;
+}
+
+.start_here ul {
+    margin: 0;
+    padding: 10px;
+}
+
+.start_here ul li {
+    margin: 5px;
+    padding: 5px;
+    overflow: hidden;
+    display: block;
+    background-color: #FFCB05;
+    list-style-type: none;
+    border-radius: 10px;
+}
+
+.start_here li a {
+    display: block;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-weight: 600;
+    color: #00274C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.start_here li a:hover,
+a:focus {
+    background-color: #00274C;
+    color: #FFCB05;
+    border-radius: 10px;
+}
+
+.connect_with_us {
+    grid-column: 1/-1;
+}
+
+.how_to {
+    grid-column: 1/-1;
+}
+
+.connect_alumni {
+    grid-column: 1/-1;
+}
+
+.explore {
+    grid-column: 3/5;
+    grid-row: 2/3;
+}
+
+.search {
+    grid-column: 1/3;
+    grid-row: 4/5;
+}
+
+.polish {
+    grid-column: 3/5;
+    grid-row: 5/6;
+}
+
+.build-network {
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+.negotiations {
+    grid-column: 3/5;
+    grid-row: 7/8;
+}
+
+.resume-writing {
+    grid-column: 1/-1;
+}
+
+.faq {
+    grid-column: 1/-1;
+}
+
+.error {
+    grid-column: 1/-1;
+}
+
+/* Grid Images */
+
+header img {
+    grid-column: 1/-1;
+}
+
+#campus-fall-backpack {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+#career-fair {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+}
+
+#career-jam {
+    grid-column: 1/3;
+}
+
+#comp-classroom {
+    grid-column: 3/5;
+    grid-row: 4/5;
+}
+
+#resume {
+    grid-column: 1/3;
+    grid-row: 5/6;
+}
+
+#build-network-img {
+    grid-column: 3/5;
+    grid-row: 6/7;
+}
+
+#negotiate {
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
+
+#career-fair-network {
+    grid-column: 1/-1;
+}
+
+#umsi-alumni {
+    grid-column: 1/-1;
+    grid-row: 5/6;
+}
+
+/* FAQ Accordion on the Resume page */
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    font-size: 18px;
+    grid-column: 1/-1;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover,
+.accordion:focus {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    grid-column: 1/-1;
+}
+
+/* Footer */
+
+footer {
+    grid-column: 1/-1;
+    grid-row: 13;
+}
+
+footer p {
+    color: #00274C;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    font-size: 12px;
+    color: #00274C;
+}
+
+/* Media Query */
+
+@media screen and (min-width: 1000px) {
+
+    nav ul {
+        margin: 0;
+        padding: 1px;
+        background-color: #FFCB05;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav li a {
+        display: block;
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-weight: 600;
+        color: #00274C;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+
+    /* Logo */
+
+    header img {
+        width: 100%;
+        display: block;
+        float: left;
+    }
+
+    /* Paragraph */
+
+    p {
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-style: normal;
+        color: #000000;
+        font-size: 18px;
+        padding: 10px 20px 10px 20px;
+    }
+
+    /* Header Font */
+
+    h1 {
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 42px;
+        text-align: center;
+        color: #00274C;
+        margin: 30px;
+        padding: 0px 0px 50px 0px;
+        border-bottom: 2px solid rgba(0, 39, 76, 0.197);
+    }
+
+    h2 {
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+        color: #00274C;
+        margin: 0px;
+        padding: 0px 0px 5px 20px;
+    }
+
+    /* Buttons */
+
+
+    /* Grid */
+
+    .grid-container {
+        display: grid;
+        gap: 13px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .grid-container iframe {
+        max-height: 675px;
+    }
+
+    header {
+        grid-column: 1/-1;
+        grid-row: 1;
+        width: 100%;
+        background-color: #FFFFFF;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        background-color: #ffffff;
+    }
+
+    aside {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        align-self: start;
+        font-size: 16px;
+        background-color: rgba(0, 39, 76, 0.429);
+        width: 100%
+    }
+
+    aside h3 {
+        color: #00274C;
+        font-size: 18px;
+        padding: 16px;
+        text-align: center;
+    }
+
+    footer {
+        grid-column: 1/-1;
+    }
+
+    /* Grid within Main */
+
+    .main-container {
+        grid-column: 3/span 4;
+    }
+
+}
